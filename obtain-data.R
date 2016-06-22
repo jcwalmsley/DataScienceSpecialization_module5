@@ -7,8 +7,8 @@ fileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv
 zipFile <- "StormData.csv.bz2"
 if (!file.exists("StormData.csv.bz2")) {
         message(paste("Downloding", zipFile))
-        fileURL <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2"
-        download.file(fileURL, destfile="StormData.csv.bz2", method = "curl")
+        fileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2"
+        download.file(fileUrl, destfile="StormData.csv.bz2", method = "curl")
 }else{
         message(paste("File exists;", zipFile))
 }
